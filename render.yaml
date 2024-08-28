@@ -9,6 +9,6 @@ services:
       apt-get install -y portaudio19-dev 
       
       pip install -r requirements.txt
-    startCommand: python Bot_web.py
+    startCommand: flet Bot_web.py
 
 
