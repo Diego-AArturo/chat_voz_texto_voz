@@ -125,7 +125,9 @@ def main_logic(page, user_text, bot_text):
     except Exception as e:
         # En caso de error, muestra un mensaje de error en el bot
         
+        bot_text.value = "Lo siento no te escuche"
         page.snack_bar.content = ft.Text("Error de configuracion")
+        page.snack_bar.bgcolor = ft.colors.RED_200
         page.snack_bar.open = True
         page.update()
         
