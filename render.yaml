@@ -3,10 +3,11 @@ services:
     name: bot-web-app
     env: python
     buildCommand: |
+      pip install --upgrade pip
       apt-get update
       apt-get install libportaudio2
       apt-get install -y portaudio19-dev 
-      pip install --upgrade pip
+      
       pip install -r requirements.txt
     startCommand: python Bot_web.py
 
