@@ -4,6 +4,7 @@ services:
     env: python
     buildCommand: |
       apt-get update
+      apt-get install libportaudio2
       apt-get install -y portaudio19-dev 
       pip install --upgrade pip
       pip install -r requirements.txt
