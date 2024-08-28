@@ -5,6 +5,9 @@ services:
     buildCommand: |
       apt-get update
       apt-get install -y portaudio19-dev libasound2-dev
+      python -m venv venv
+      source venv/bin/activate
       pip install -r requirements.txt
-    startCommand: python Bot_web.py
+    startCommand: source venv/bin/activate && python Bot_web.py
+
 
